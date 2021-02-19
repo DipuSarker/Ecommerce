@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+{% load static %}
+
+    {% block title %}
+        {{ settings.title }}
+    {% endblock title %}
+
+    {% block description %}
+        {{ settings.description }}
+    {% endblock description %}
+
+    {% block keyword %}
+        {{ settings.keyword }}
+    {% endblock keyword %}
+
+
+
+            <!-- Begin Header Area -->
+            {% block header %}
+                {% include 'header.html' %}
+            {% endblock header %}
+            <!-- Header Area End Here -->
+
+            {% block slider %}
+                {% include 'slider.html' %}
+            {% endblock slider %}
+
+            {% block sidebar %}
+                {% include 'sidebar.html' %}
+            {% endblock sidebar %}
+
+
+                {% block content %}
+                    {% include 'content.html' %}
+                {% endblock content %}
+
+            <!-- Begin Footer Area -->
+            {% block footer %}
+                {% include 'footer.html' %}
+            {% endblock footer %}
+            <!-- Footer Area End Here -->
+
+
+
+
+
